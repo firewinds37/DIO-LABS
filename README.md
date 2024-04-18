@@ -12,7 +12,7 @@ git clone https://github.com/firewinds37/DIO-LABS.git
 |Aulas|Descrição|
 -------|----------
 |GIT   | Como escrever o README.md|
--------|----------
+
 
 
 Arquivo README.md editado no [*readme.so*](https://readme.so/pt/editor)
