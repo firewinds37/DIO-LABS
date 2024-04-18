@@ -9,3 +9,5 @@ Uma breve descrição sobre o que esse projeto faz e para quem ele é
 ```
 git clone https://github.com/firewinds37/DIO-LABS.git
 ```
+
+Arquivo README.md editado no [*readme.so*](https://readme.so/pt/editor)
