@@ -1,0 +1,51 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    box-sizing: border-box;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    box-sizing: border-box;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    box-sizing: border-box;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    box-sizing: border-box;
+  }
+  
+body {
+  background-color: #f6f8fc;
+}
+
+  .content {
+    padding: 1rem;
+    background-color: white;
+    width:  100vw;
+    height:  100vh;
+    margin: 1rem;
+
+  }
+
+  @media scrren and (min-width: 992px){
+    .content {
+      max-width: 992px;
+      height:  auto;
+      margin: 0 auto;
+      border-radius: 1rem;
+    }
+  }
+
+  
