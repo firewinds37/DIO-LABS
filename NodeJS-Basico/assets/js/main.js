@@ -1,6 +1,8 @@
 
 const pokemonList = document.getElementById('pokemonList');
-const loadMoreButton = document.getElementById('loadMoreButto');
+const loadMoreButton = document.getElementById('loadMoreButton');
+
+const maxRecords = 151;
 const limit = 5;
 let offset = 0;
 
@@ -39,6 +41,7 @@ function loadPokemonItens(offset, limit)
 {
         pokeApi.getPokemons(offset, limit).then( (pokemons = []) => 
         {
+            
             const newHtml = pokemons.map((pokemon) => 
                 `
                 <li class="pokemon ${pokemon.type}">
@@ -63,5 +66,20 @@ loadPokemonItens(offset, limit)
 loadMoreButton.addEventListener('click', () => 
 { 
     offset += limit
-    loadPokemonItens(offset, limit);
+    const qtdRecordNextPage = offset + limit
+
+    if (qtdRecordNextPage >= maxRecords)
+    {
+        const newLimit = maxRecords - offset;
+        loadPokemonItens(offset, newLimit);
+
+        //remove o botao
+        loadMoreButton.parentElement.removeChild(loadMoreButton);
+    }
+    else
+    {
+        loadPokemonItens(offset, limit);
+    }
+
+    
 })
