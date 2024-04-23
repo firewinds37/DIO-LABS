@@ -30,6 +30,16 @@ body {
   background-color: #f6f8fc;
 }
 
+a:link { 
+  text-decoration: none; 
+} 
+
+ 
+a:hover { 
+  filter: brightness(1.2); 
+}
+
+
   .content {
     padding: 1rem;
     background-color: white;
@@ -48,4 +58,3 @@ body {
     }
   }
 
-  
