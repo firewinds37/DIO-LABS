@@ -3,14 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokedex</title>
+    <!--Normalize CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fonte CSS-->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/detail.css">
+    <!--Fonte Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">    
 </head>
 <body>
 
-    <a href="javascript:history.back()">Back</a>
+    <div class="first-part">
+        <section>
+            <h1 class="h1name">Bulbasaur</h1><h1 class="h1number">#001</h1>
+        </section>
+        <section class="pokemon">
+            <div class="detail">
+                <ol class="types">
+                    <li class="type-detail">Grass</li>
+                    <li class="type-detail">Poison</li>
+                </ol>
+            </div>
+        </section>
+        <section>
+            <img  class="img-detail" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
+        </section>  
+  
+        <!--<a href="javascript:history.back()">Back</a>-->
+    </div>
+    <section>
+        <div class="centerdiv">
+            <table>
+            <tr><td class="tdTitle">Species:</td><td class="tdInfo">Seed</td></tr>
+            <tr><td class="tdTitle">Heigh:</td class="tdInfo"><td>70 cm</td></tr>
+            <tr><td class="tdTitle">Weight:</td class="tdInfo"><td>6790 g</td></tr>
+            <tr><td class="tdTitle">Abilities:</td class="tdInfo"><td>6790 g</td></tr>
+            </table>
+        </div>
+      </section>    
+    <div class="pagination">
+        <button  id="backButton" type="button">Back</button>
+    </div>
 
-    <!-- Chamada dos scripts  -->
-    
+    <!-- Chamada dos scripts  -->    
     <script src="/assets/js/detail.js"></script>
 
 </body>

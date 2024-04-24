@@ -82,14 +82,14 @@
     background-color: #f9aec7;
 }
  
-  .pokemon {    
-    margin: .5rem;
-    padding: 2rem 1rem;    
-    color: white;
-    border-radius: 1rem;
-    display: flex; 
-    flex-direction: column;
-  }
+.pokemon {    
+  margin: .5rem;
+  padding: 2rem 1rem;    
+  color: white;
+  border-radius: 1rem;
+  display: flex; 
+  flex-direction: column;
+}
 
 .pokemon .number {
   color: black;
@@ -119,6 +119,18 @@
 .pokemon .detail .types .type {
   
   color: #fff;
+  padding: .25rem .5rem;
+  margin: .25rem 0;
+  font-size: .625rem;
+  border-radius: 1rem;
+  filter: brightness(1.1);
+  text-align: center;
+}
+.pokemon .detail .types .type-detail {
+  
+  color: #fff;
+  background-color: #77c850;
+  display: inline;
   padding: .25rem .5rem;
   margin: .25rem 0;
   font-size: .625rem;

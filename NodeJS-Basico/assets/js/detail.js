@@ -1,3 +1,4 @@
+const backButton = document.getElementById('backButton');
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
 
@@ -7,6 +8,10 @@ getPokemonDetail = (id) => {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}/`
 
     console.log(url);
+
+    resposta = fetch(url).then((response) => response.json())
+    
+    console.log(resposta)
 
     // return fetch(url)
     // .then((response) => response.json())
@@ -18,3 +23,8 @@ getPokemonDetail = (id) => {
 }
 
 console.log(getPokemonDetail(id));
+
+backButton.addEventListener('click', () => 
+{
+    history.back(); 
+})

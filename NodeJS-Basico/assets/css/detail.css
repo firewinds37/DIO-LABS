@@ -1,0 +1,49 @@
+.h1name
+{
+    text-align: left;
+    padding: .5rem;
+}
+
+.h1number
+{
+    text-align: right;
+    padding: .5rem;
+}
+
+.first-part 
+{
+    color: white;
+    border-radius: 1rem;
+    background-color: #77c850;
+}
+
+.img-detail {
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 35%;    
+}
+.table
+{
+    text-align: center;    
+}
+
+.tdTitle {
+    text-align: left;
+    color: gray;
+    
+}
+
+.tdInfo {
+    text-align: right;    
+}
+
+.centerdiv 
+{
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
