@@ -17,9 +17,10 @@
 </head>
 <body>
 
-    <div class="first-part">
+    <!--<div class="first-part">-->
+    <div class="pokemon grass">        
         <section>
-            <h1 class="h1name">Bulbasaur</h1><h1 class="h1number">#001</h1>
+            <h1 id="namePokemon" class="h1name">teste</h1><h1 id="numberPokemon" class="h1number">#001</h1>
         </section>
         <section class="pokemon">
             <div class="detail">
@@ -30,18 +31,21 @@
             </div>
         </section>
         <section>
-            <img  class="img-detail" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
+            <div id="imgPokemon">
+                <!--<img  class="img-detail" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">-->
+            </div>
         </section>  
-  
+
         <!--<a href="javascript:history.back()">Back</a>-->
+    
     </div>
     <section>
         <div class="centerdiv">
             <table>
             <tr><td class="tdTitle">Species:</td><td class="tdInfo">Seed</td></tr>
-            <tr><td class="tdTitle">Heigh:</td class="tdInfo"><td>70 cm</td></tr>
-            <tr><td class="tdTitle">Weight:</td class="tdInfo"><td>6790 g</td></tr>
-            <tr><td class="tdTitle">Abilities:</td class="tdInfo"><td>6790 g</td></tr>
+            <tr><td class="tdTitle">Heigh:</td><td class="tdInfo">70 cm</td></tr>
+            <tr><td class="tdTitle">Weight:</td><td class="tdInfo">6790 g</td></tr>
+            <tr><td class="tdTitle">Abilities:</td><td class="tdInfo">Overgrow, Chlorophyll</td></tr>            
             </table>
         </div>
       </section>    
@@ -51,6 +55,9 @@
 
     <!-- Chamada dos scripts  -->    
     <script src="/assets/js/detail.js"></script>
+    <script src="/assets/js/main-detail.js"></script>
+    <script src="/assets/js/pokemon-detail.js"></script>    
+    
 
 </body>
 </html>

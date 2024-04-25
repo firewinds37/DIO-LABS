@@ -2,24 +2,32 @@
 {
     text-align: left;
     padding: .5rem;
+    color: white;
+    margin-bottom: 0;
+    text-transform: capitalize;           
+    
 }
 
 .h1number
 {
     text-align: right;
     padding: .5rem;
+    color: black;
+    text-align: right;
+    opacity: .3;
+
 }
 
 .first-part 
 {
     color: white;
     border-radius: 1rem;
-    background-color: #77c850;
+    background-color: #77c850;    
+    margin:  .5rem;
 }
 
 .img-detail {
-    display: block;
-    
+    display: block;    
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -43,7 +51,6 @@
 .centerdiv 
 {
     margin: auto;
-    width: 60%;
-    border: 3px solid #73AD21;
+    width: 60%;    
     padding: 10px;
 }
