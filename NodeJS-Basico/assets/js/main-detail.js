@@ -15,6 +15,15 @@ function loadPokemonDetail(id)
         //<div class="pokemon ${pokemon.type}>
         //`
         
+        //adciciona o tipo de pokemon
+
+        const listHtml = 
+        `                         
+            <ol class="types">
+                ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+            </ol>                
+        `
+        pokemonListType.innerHTML = listHtml
 
         //troca o nome do pokemon
         pokemonname.innerHTML = 
@@ -34,6 +43,15 @@ function loadPokemonDetail(id)
         <img id="imgPokemon" class="img-detail" src="${pokemon.photo}" alt="${pokemon.name}">
         `
             
+        //monta a tabela com os dados do pokemon
+        pokemontable.innerHTML =
+        `
+        <table>        
+        <tr><td class="tdTitle">Heigh:</td><td class="tdInfo">${pokemon.height} cm</td></tr>
+        <tr><td class="tdTitle">Weight:</td><td class="tdInfo">${pokemon.weight} g</td></tr>
+        <tr><td class="tdTitle">Abilities:</td><td class="tdInfoAbilities">${pokemon.abilities.join()}</td></tr>            
+        </table>
+        `
 
 
         /*

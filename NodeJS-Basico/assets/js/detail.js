@@ -4,7 +4,9 @@ const backButton = document.getElementById('backButton');
 var pokemonname = document.getElementById("namePokemon")
 var pokemonnumber = document.getElementById("numberPokemon")
 var pokemonphoto = document.getElementById("imgPokemon")
+var pokemontable = document.getElementById("tableDetailPokemon")
 var pokemonbackground = document.getElementById("backgroundPokemon")
+var pokemonListType = document.getElementById("listTypePokemon")
 var pokemon;
 
 function convertApiToPokemonDetail(pokeDetail)

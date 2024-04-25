@@ -44,6 +44,12 @@
     
 }
 
+.tdInfoAbilities {
+    text-align: right;    
+    text-transform: capitalize;      
+
+}
+
 .tdInfo {
     text-align: right;    
 }
