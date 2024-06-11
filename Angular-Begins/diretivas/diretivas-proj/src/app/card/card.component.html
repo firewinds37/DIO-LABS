@@ -1,0 +1,37 @@
+<h1>My app</h1>
+<p>card works!</p>
+<button>ola mundo</button>
+<ul>
+  @for (prod of produtos; track $index) {
+    <li (click)="remover($index)">{{$index}} - {{ prod }}</li>
+  }
+  <button (click)="adicionar()">Adicionar</button>
+
+</ul>
+
+<ul>
+  @switch (menuType)
+  {
+    @case ("user")
+    {
+      <li>Cadastrar</li>
+      <li>Sair</li>
+    }
+    @case ("admin")
+    {
+      <li>Cadastrar</li>
+      <li>Excluir</li>
+      <li>Sair</li>
+    }
+    @case ("superuser")
+    {
+      <li>Cadastrar</li>
+      <li>Excluir</li>
+      <li>Criar Admin</li>
+      <li>Sair</li>
+    }
+    @default {
+      <li>Sair</li>
+    }
+  }
+</ul>
